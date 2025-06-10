@@ -34,3 +34,18 @@ Introduce little red book's recoomendation system -> 消费指标 -> 北极星�
 **重排**: 用多样性测试（如MMR,DPP),从几百篇中选出几十篇并结合规则打散同标题笔记、插入广告、推广内容、更具生态要求调整排序
 
 # [推荐系统的AB测试](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/01_Basics_03.pdf)
+
+AB test(what\how) - 分桶 - 分层实验 - holdout -  实验推全 & 反转实验
+
+AB test：
+先做离线测试 在做小流量AB test再做全流量AB test
+
+分桶的目的：有统计学意义，管理多个实验
+
+分层：解决data不足的问题，其中同层互斥、不同层正交
+
+holdout: 考察业务
+
+实验推全： 一个实验成功就推全，上演叠加效应（可能diff不会那么赞也可能更好）
+
+反转实验：推全层保留旧层用以观测一些迟滞性指标
