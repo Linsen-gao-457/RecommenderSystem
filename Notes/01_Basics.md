@@ -23,4 +23,14 @@ Introduce little red book's recoomendation system -> 消费指标 -> 北极星�
 
 # [推荐系统的链路](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/01_Basics_02.pdf)
 
+推荐系统的整条链路由：召回-粗排-精排-重排
+
+**召回**：用多条通道从几万篇笔记中取出几千篇
+
+**粗排**: 用小规模的神经网络给几千篇笔记打分，选取出分数最高的几百篇
+
+**精排**: 用大规模升级网络，给几百篇打分
+
+**重排**: 用多样性测试（如MMR,DPP),从几百篇中选出几十篇并结合规则打散同标题笔记、插入广告、推广内容、更具生态要求调整排序
+
 # [推荐系统的AB测试](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/01_Basics_03.pdf)
