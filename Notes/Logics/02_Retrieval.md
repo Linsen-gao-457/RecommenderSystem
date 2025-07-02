@@ -56,4 +56,6 @@ why index?
 
  Nearest Neighbor Search 和 Neighbor Search
 
+ Matrix Completion 在实践中的效果并不好，因为负样本曝光之后，没有点击，交互等操作
+
  
