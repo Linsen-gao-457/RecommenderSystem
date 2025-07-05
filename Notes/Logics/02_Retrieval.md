@@ -11,6 +11,7 @@
 - [双塔模型 two-tower model：模型和训练](#双塔模型-two-tower-model模型和训练)
 - [双塔模型 two tower model: 正负样本](#双塔模型-two-tower-model-正负样本)
 - [双塔模型：线上召回和更新](#双塔模型线上召回和更新)
+- [双塔模型 自监督学习](#双塔模型-自监督学习)
 
 # [基于物品的协同过滤（ItemCF）](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_01.pdf)
 
@@ -86,3 +87,17 @@ In practice, companies often combine full and incremental updates:
 - Incremental updates capture the latest user behaviour and item changes, ensuring the system remains up-to-date and responsive in real time.
 
 企业是两者结合，全量效果好，增量更新捕捉实时性
+
+# [双塔模型 自监督学习](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_09.pdf)
+
+Self-supervised learning helps alleviate the high-frequency item problem in recommendation systems. 
+
+In typical user behavior data, head items appear very  frequently, so the model easily learns good representations for them. However, tail items have few interactions, so the model struggles to learn meaningful representations for these long-tail items.
+
+By using self-supervised learning, we can generate additional training signals to better learn robust representations for both head and tail items, even when explicit interaction data is sparse.
+
+There are several ways to reshape features:
+1. random mask
+2. drop out
+3. complementary learning
+4. mask related features
