@@ -8,6 +8,7 @@
 - [基于用户的协同过滤（UserCF）](#基于用户的协同过滤usercf)
 - [离散特征处理](#离散特征处理)
 - [Matrix Coompletion](#matrix-coompletion)
+- [双塔模型：模型和训练](#双塔模型模型和训练)
 
 # [基于物品的协同过滤（ItemCF）](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_01.pdf)
 
@@ -30,32 +31,35 @@ why index?
 
 找到用户感兴趣的n,找到每个物品相似的TOP k物品，然后找到Top-k相似，列出TOP
 
-# Swing召回通道
+# [Swing召回通道](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_02.pdf)
 
 目的:考虑到社交群体-》reduce dependence on the ground
 
-定义重合度 -> 减低重合度
+定义重合度 -> 减低重合度（ItemCF想要做的更精准，降低social connection对相似度带来的影响）
 
-# 基于用户的协同过滤（UserCF）
+# [基于用户的协同过滤（UserCF）](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_03.pdf)
 
  根据用户相似度做推荐：
  1. 找到相似笔记
  2. 关注作者的重合度
 
- 降低热门笔记权重， 如何计算用户之间的相似度
+ 降低热门笔记权重， 如何计算用户之间的相似度(类似于ItemCF的Swing)
 
- # 离散特征处理
+ # [离散特征处理](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_04.pdf)
 
- Onehot, embedding -> relationship between ONEhot and embedding
+ Onehot, embedding -> relationship between onehot and embedding
 
- # Matrix Coompletion
+ # [Matrix Coompletion](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_05.pdf)
 
  矩阵补充就是用绿色的格子做训练去预测灰格子。
 
- 交叉熵（分类）> 回归函数
 
- Nearest Neighbor Search 和 Neighbor Search
+ Approximate Nearest Neighbor Search 和  Nearset Neighbor Search:
+
+ Approximate nearest neighbor search can narrorw down a slice of users into a vector instead of using every single vector to search.
 
  Matrix Completion 在实践中的效果并不好，因为负样本曝光之后，没有点击，交互等操作
+
+ # [双塔模型：模型和训练](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_06.pdf)
 
  
