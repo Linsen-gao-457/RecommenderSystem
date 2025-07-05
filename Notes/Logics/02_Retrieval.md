@@ -7,8 +7,8 @@
 - [Swing召回通道](#swing召回通道)
 - [基于用户的协同过滤（UserCF）](#基于用户的协同过滤usercf)
 - [离散特征处理](#离散特征处理)
-- [Matrix Coompletion](#matrix-coompletion)
-- [双塔模型：模型和训练](#双塔模型模型和训练)
+- [矩阵补充模型 Matrix Coompletion](#矩阵补充模型-matrix-coompletion)
+- [双塔模型 two-tower model：模型和训练](#双塔模型-two-tower-model模型和训练)
 
 # [基于物品的协同过滤（ItemCF）](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_01.pdf)
 
@@ -49,7 +49,7 @@ why index?
 
  Onehot, embedding -> relationship between onehot and embedding
 
- # [Matrix Coompletion](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_05.pdf)
+ # [矩阵补充模型 Matrix Coompletion](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_05.pdf)
 
  矩阵补充就是用绿色的格子做训练去预测灰格子。
 
@@ -60,6 +60,9 @@ why index?
 
  Matrix Completion 在实践中的效果并不好，因为负样本曝光之后，没有点击，交互等操作
 
- # [双塔模型：模型和训练](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_06.pdf)
+ # [双塔模型 two-tower model：模型和训练](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_06.pdf)
 
- 
+ 双塔模型就是融合了user ID, item ID, it combine different featuresa of the model(discrete and continuous feature)
+
+ three training methods of 双塔模型: point wise, pairwise, listwise.
+
