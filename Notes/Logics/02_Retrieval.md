@@ -10,6 +10,7 @@
 - [矩阵补充模型 Matrix Coompletion](#矩阵补充模型-matrix-coompletion)
 - [双塔模型 two-tower model：模型和训练](#双塔模型-two-tower-model模型和训练)
 - [双塔模型 two tower model: 正负样本](#双塔模型-two-tower-model-正负样本)
+- [双塔模型：线上召回和更新](#双塔模型线上召回和更新)
 
 # [基于物品的协同过滤（ItemCF）](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_01.pdf)
 
@@ -72,3 +73,16 @@ why index?
 how to define negative sample; easy negative, hard negative; false
 
 召回模型的目的是找到用户感兴趣的物品，reranker 是排序，所以曝光未点击的物品可以作为负样本
+
+# [双塔模型：线上召回和更新](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_08.pdf)
+
+In a two-tower model, item embeddings are usually precomputed, while user embedding are computed online in real time.
+
+Why do we need both full and incremental updates？
+
+In practice, companies often combine full and incremental updates:
+
+- Full updates periodly reflesh embedding to ensure quality and consistency.
+- Incremental updates capture the latest user behaviour and item changes, ensuring the system remains up-to-date and responsive in real time.
+
+企业是两者结合，全量效果好，增量更新捕捉实时性
