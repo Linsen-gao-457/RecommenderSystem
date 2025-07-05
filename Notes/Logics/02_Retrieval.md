@@ -9,6 +9,7 @@
 - [离散特征处理](#离散特征处理)
 - [矩阵补充模型 Matrix Coompletion](#矩阵补充模型-matrix-coompletion)
 - [双塔模型 two-tower model：模型和训练](#双塔模型-two-tower-model模型和训练)
+- [双塔模型 two tower model: 正负样本](#双塔模型-two-tower-model-正负样本)
 
 # [基于物品的协同过滤（ItemCF）](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_01.pdf)
 
@@ -66,3 +67,8 @@ why index?
 
  three training methods of 双塔模型: point wise, pairwise, listwise.
 
+# [双塔模型 two tower model: 正负样本](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_07.pdf)
+
+how to define negative sample; easy negative, hard negative; false
+
+召回模型的目的是找到用户感兴趣的物品，reranker 是排序，所以曝光未点击的物品可以作为负样本
