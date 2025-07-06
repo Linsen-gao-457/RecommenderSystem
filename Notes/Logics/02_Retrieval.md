@@ -1,6 +1,6 @@
-# Table of Contents
+#### Table of Contents
 
-- [Table of Contents](#table-of-contents)
+
 - [基于物品的协同过滤（ItemCF）](#基于物品的协同过滤itemcf)
   - [IntemCF theory](#intemcf-theory)
   - [The process of ItemCF](#the-process-of-itemcf)
