@@ -12,6 +12,7 @@
 - [双塔模型 two tower model: 正负样本](#双塔模型-two-tower-model-正负样本)
 - [双塔模型：线上召回和更新](#双塔模型线上召回和更新)
 - [双塔模型 自监督学习](#双塔模型-自监督学习)
+- [Deep Retrieval](#deep-retrieval)
 
 # [基于物品的协同过滤（ItemCF）](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_01.pdf)
 
@@ -101,3 +102,9 @@ There are several ways to reshape features:
 2. drop out
 3. complementary learning
 4. mask related features
+
+# [Deep Retrieval](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_10.pdf)
+
+Use path to represent user features.
+
+更新物品表征和更新神经网络
