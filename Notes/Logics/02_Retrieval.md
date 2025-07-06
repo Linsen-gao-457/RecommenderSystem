@@ -14,6 +14,7 @@
 - [双塔模型 自监督学习](#双塔模型-自监督学习)
 - [Deep Retrieval](#deep-retrieval)
 - [其他召回通道](#其他召回通道)
+- [曝光过滤 \& Bloom Filter](#曝光过滤--bloom-filter)
 
 # [基于物品的协同过滤（ItemCF）](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_01.pdf)
 
@@ -115,3 +116,11 @@ Use path to represent user features.
 - 地理位置召回：Geohash, 同城召回
 - 作者召回：关注作者，有交互的作者，相似作者
 - 缓存召回
+
+# [曝光过滤 & Bloom Filter](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_12.pdf)
+
+曝光过滤 -> 增加用户提样
+
+Bloom Filter来避免bruce force的情况
+
+曝光过滤的链路（足够快）
