@@ -13,6 +13,7 @@
 - [双塔模型：线上召回和更新](#双塔模型线上召回和更新)
 - [双塔模型 自监督学习](#双塔模型-自监督学习)
 - [Deep Retrieval](#deep-retrieval)
+- [其他召回通道](#其他召回通道)
 
 # [基于物品的协同过滤（ItemCF）](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_01.pdf)
 
@@ -108,3 +109,9 @@ There are several ways to reshape features:
 Use path to represent user features.
 
 更新物品表征和更新神经网络
+
+# [其他召回通道](https://github.com/Linsen-gao-457/RecommenderSystem/blob/main/Slides/02_Retrieval_11.pdf)
+
+- 地理位置召回：Geohash, 同城召回
+- 作者召回：关注作者，有交互的作者，相似作者
+- 缓存召回
